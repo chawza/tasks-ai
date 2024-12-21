@@ -1,6 +1,7 @@
-from typing import Optional
-from sqlmodel import Field, SQLModel, Relationship
 from datetime import datetime
+from typing import Optional
+
+from sqlmodel import Field, Relationship, SQLModel
 
 from app.models.users import User
 

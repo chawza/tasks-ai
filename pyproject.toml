@@ -1,0 +1,27 @@
+[build-system]
+requires = ['setuptools>=42']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'tasks-ai'
+version = '0.0.1'
+description = ''
+authors = [
+    {name = 'Your Name', email = 'your.email@example.com'},
+]
+requires-python = '>=3.13'
+
+[tool.ruff]
+line-length = 88
+
+[tool.lint] 
+select = [
+    'E',  # pycodestyle errors
+    'W',  # pycodestyle warnings
+    'F',  # pyflakes
+    'I',  # isort
+    'B',  # flake8-bugbear
+]
+
+[tool.ruff.format]
+quote-style = 'single'
